@@ -1,5 +1,13 @@
 let prompt = require('prompt-sync')();
-
+/*
+Input:
+     age
+     season
+proccessing:
+     determine the bed time deppend on age and season
+output:
+     bed time
+*/
 let age = prompt("Enter age: ");
 let season = prompt("What is the season? ")
 

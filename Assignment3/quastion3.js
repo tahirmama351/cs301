@@ -1,5 +1,14 @@
 let prompt = require('prompt-sync')();
 
+/*
+Input:
+     *name of student
+     *university credit accomplished
+proccessing:
+     *matching the name with credit accomplished
+output:
+     *the status of student
+*/
 let studentName = prompt("Enter you name: ");
 let completedCredit = prompt("Enter credit number you accomplished: ");
 

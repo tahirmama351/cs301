@@ -1,4 +1,13 @@
 let prompt = require('prompt-sync')();
+/*
+Input:
+     *the status of costomer
+     *number of books overdue date in the last year
+processing:
+     *calculate the borrowing time depend on the status and overdue data
+output:
+     *borrowing time
+*/
 
 let patron_status = prompt("Enter your patron status: ");
 

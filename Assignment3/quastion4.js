@@ -1,5 +1,14 @@
 let prompt = require('prompt-sync')();
 
+/*
+Input:
+     *cost of house
+     *rate deppend on the cost
+proccessing:
+     *calcualt the dipposite depend on the cost of house and rate
+output:
+     *depposite
+*/
 let cost_of_house = prompt("What is the cost of house? ");
 cost_of_house = parseFloat(cost_of_house);
 

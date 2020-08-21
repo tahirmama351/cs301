@@ -1,5 +1,13 @@
 let prompt = require('prompt-sync')();
-
+/*
+input:
+     any two different numbers
+proccessing:
+     the difference between two numbers.
+     the absolute value of difference
+output:
+     absolute value of difference
+*/
 let num1 = prompt("Enter frist number: ");
 num1 = parseFloat(num1);
 
