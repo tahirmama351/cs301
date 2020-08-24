@@ -1,7 +1,14 @@
+/*
+Input:
+	-number from the user
+	-answer
+proccessing:
+	-compare input from user with answer
+	-if not equal ask the user again let inpu another number
+output:
+	-guessed number + message for user
+*/
 const prompt = require("prompt-sync")();
-
-//let message; // ="I am thinking of a number between 1 and 100 tray to guess it! please inter an integer between 1 and 100: "
-//let guess;
 
 let answer =38;
 	let guess = "please the integer between 1 and  100: "
