@@ -10,17 +10,23 @@ output:
 */
 const prompt = require("prompt-sync")();
 
-let answer =38;
-	let guess = "please the integer between 1 and  100: "
-	do{
-		guess = parseInt(prompt(guess))
-		if(guess < answer){			
-			guess= guess + " is too low. please inter again:  " 			
-		}else if(guess > answer){			
-			guess =guess + " is too high. please inter again: "		
-		}
-	}while(guess!= answer)
-	guess = guess +" is correct"
-	console.log(guess)
+
+let count = 1
+let answer = 38;
+let message = "please enter the integer between 1 and  100: ";
+let guess;
+do {
+	guess = parseInt(prompt(message))
+	if (guess < answer) {
+		message = guess + " is too low. please inter again:  " ;		count += 1
+	} else if (guess > answer) {
+		message = guess + " is too high. please inter again: ";
+		count += 1
+	}
+} while (guess != answer)
+message = guess + " is correct"
+count += 1
+console.log(message)
+console.log(count)
 
 
