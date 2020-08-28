@@ -21,6 +21,5 @@ function to_chack_prime(number_from_user) {
 let inputByUser = prompt("Please enter a number let I test if it is pime: ");
 inputByUser = parseInt(inputByUser);
 
-
 to_chack_prime(inputByUser);
 

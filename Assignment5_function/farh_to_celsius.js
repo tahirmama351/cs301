@@ -1,6 +1,6 @@
 let prompt = require('prompt-sync')();
 
-function do_in_put_out_put(fahr) {
+function do_in_put_out_put() {
      fahr = prompt("Enter tempraturn in fahranheit: ");
      fahr = parseInt(fahr);
      fahr_to_cels(fahr);

@@ -1,9 +1,8 @@
 let prompt = require('prompt-sync')();
 
-
 function doInputOoutPut() {
-     houseVolume(width, depth, height, sweep)
-     console.log(house_Volume)
+     let house_volume = houseVolume(width, depth, height, sweep)
+     return house_volume
 }
 
 let width = prompt("Enter the width of your house: ")
@@ -18,31 +17,31 @@ height = parseInt(height)
 let sweep = prompt("Enter the sweep of your house: ")
 sweep = parseInt(sweep)
 
-doInputOoutPut();
+let result = doInputOoutPut();
+console.log(result)
 
 function houseVolume(width, depth, height, sweep) {
-     livingVolume(width, depth, height)
+     let living_Volume = livingVolume(width, depth, height)
 
-     roofVolume(width, depth, sweep)
-    let house_Volume = living_Volume + roof_Volume
-    return house_Volume
+     let roof_Volume = roofVolume(width, depth, sweep)
+     let house_Volume = living_Volume + roof_Volume
+     return house_Volume
 }
 
 function livingVolume(width, depth, height) {
      let living_volume = width * depth * height;
      return living_volume;
-
 }
- 
-function roofVolume(width, depth, sweep) {
-     triangleArea(sweep, sweep, depth)
-     let volumeOfRoof = areaOfTriangle * width;
-     return volumeOfRoof;
 
+function roofVolume(width, depth, sweep) {
+     let area = triangleArea(sweep, sweep, depth);
+     let roof_volume = area * width;
+     return roof_volume;
 }
 
 function triangleArea(sweep, sweep, depth) {
      let s; //semi_parameter;
+
      s = (sweep + sweep + depth) / 2
      let areaOfTriangle = Math.sqrt(s * (s - sweep) * (s - sweep) * (s - depth))
      areaOfTriangle = Math.round(areaOfTriangle * 10) / 10
