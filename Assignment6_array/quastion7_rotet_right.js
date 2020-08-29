@@ -1,12 +1,13 @@
 'use strickt'
-let arr = [17, 8, 9, 5, 20]
 
-function rotate_left(list) {
-     let temp_arr = []
-     for (i = 0; i < arr.length; i++) {
-          temp_arr[i] = arr[i-1] 
-     }
-     return temp_arr
+let orginal_arr = [17, 8, 9, 5, 20]
+
+function rotate_right(array) {
+     // split arginal_arr in to two
+     let new_orginal_arr1 = [17, 8, 9, 5,]
+     let new_orginal_arr2 = [20]
+     let rotated_arr= new_orginal_arr2.concat(new_orginal_arr1)
+     
+     console.log(rotated_arr)
 }
-let rotated_arr = rotate_left(arr);
-console.log(rotated_arr);
+rotate_right(orginal_arr)
