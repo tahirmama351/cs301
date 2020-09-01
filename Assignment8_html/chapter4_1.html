@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+     <meta charset="utf-8">
+     <title> A program to say Hello</title>
+     <script>
+          function greetingUsser() {
+               let name = document.getElementById('name').Value;               
+               let greeting = "Hello " + name + ". I hope you are well today. ";
+               document.getElementById("output").innerHTML = greeting;
+          }
+     </script>
+
+
+</head>
+
+<body>
+     Please enter your name:<input id='name' type='text'/> <br />    
+
+     <button type="button" onclick="greetingUsser()">Hello</button>
+     <p id="output"></p>
+</body>
+
+
+</html>

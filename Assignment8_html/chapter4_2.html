@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+     <title>Applied Scripture</title>
+
+<script>
+function applyScripture(){
+     let name = document.getElementById('nameInputBox').value;
+     let scripture = "I, " +name+", having been born of "+"goodly parents, therefore I was taught somewhat "+ "in all the learning of my father. ";
+     document.getElementById("outputDiv").innerHTML=scripture;
+}
+</script>
+
+
+</head>
+
+<body>
+please inter your name:
+<input type="text" id="nameInputBox">
+<button type="button" onclick="applyScripture()">Varse</button>
+<div id="outputDiv"></div>
+
+</body>
+
+
+</html>
+
